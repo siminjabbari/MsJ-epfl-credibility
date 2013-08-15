@@ -1,0 +1,100 @@
+<html>
+
+<head>
+  <title>Infromation corresponding to the entered URL</title>
+  <link rel="stylesheet" href="/css/index-topic.css">
+</head>
+
+<body>
+
+{% if Found %}
+
+	<h2>The URL you entered is:</h2>
+
+	<h3>{{website}} </h3>
+	
+	<h2>Here is the info for the URL you entered:</h2>
+
+			<table class="center">
+				<tr>
+					<th class="topic">Topic</th>
+					<th class="subject">Subject</th>
+					<th class="credibility">Credibility</th>
+				</tr>
+				<tr>
+					<td>{{topic}}</td>
+					<td>{{subject}}</td>
+					<td class="td">{{credibility}}</td>
+				</tr>
+			</table>
+		<!--h2>Topic:</h2> <h3>{{topic}}</h3>
+		<h2>Subject:</h2> <h3>{{subject}}</h3>
+		<h2>Credibility:</h2> <h3>{{credibility}}</h3-->
+	
+{% else %}
+
+	<h2> The exact phrase you wrote for website is not available in our database.</h2>
+	
+	{% if Flag %}
+		<h2> We think you meant: <span> {{url_new}}</span><h2>
+	
+		<hr>
+		
+		<h2> Information form AlchemyAPI:</h2>
+		{% if topic %}
+			<h2> The topic according to AlchemyAPI database is: <span>{{topic}}</span></h2> 
+		{% else %}
+			<h2> Unfortunately there is no topic in AlchemyAPI database for this website</h2>
+		{% endif %}
+		
+		<hr>
+
+		{% if Found2 %}
+			<h1>Here is the info for the sugguested url mentioned above in our database:</h1>
+
+				<table class="center" border="1">
+					<tr>
+						<th class="topic">Topic</th>
+						<th class="subject">Subject</th>
+						<th class="credibility">Credibility</th>
+					</tr>
+					<tr>
+						<td>{{topic2}}</td>
+						<td>{{subject2}}</td>
+						<td class="td">{{credibility2}}</td>
+					</tr>
+				</table>
+
+			<!--h2>Topic:</h2> <h3>{{topic2}}</h3>
+			<h2>Subject:</h2> <h3>{{subject2}}</h3>
+			<h2>Credibility:</h2> <h3>{{credibility2}}</h3-->
+		{% else %}
+			<h2> Unfortunately the sugguested url is not available in our database!</h2>
+			{% if topic %}
+				<h2> Would you please rate this url which is recognized in the category of: <span>{{topic}}</span> </h2>
+				<form action="/Finish">
+				    <center>
+				    	<select name="grade">
+				        <option selected="selected" value=""> Rate this URL </option>
+				        {% for i in [1,2,3,4,5] %}
+				        	<option value="{{i}}">{{i}}</option>
+				    	{% endfor %}
+				    	</select>
+					</center>
+				          <br>
+				    <!--h3>Which rate do you give to this URL? (from 1 to 5):</h3> 
+				    <input type="integer" name="number" value="1" min="1" max="5"-->				                
+
+				    <center><input class="submit" type="submit" value="Submit"/></center>
+				</form>
+			{% endif %}
+
+		{% endif %}
+
+	{% else %}
+		<h2 class="error"> Error: There is no such page at all in the web. Click <a href="/URL">here</a> to enter a new URL.</h2>
+	{% endif %}
+
+{% endif %}
+</body>
+</html>

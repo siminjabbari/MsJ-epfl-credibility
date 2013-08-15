@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title>Ranked list of available topics</title>
+  <link rel="stylesheet" href="/css/topic-list.css">
+</head>
+
+<body>
+<h2>Here is the ranked list of available topics in our database with their mean and std of their credibilities</h2>
+
+
+<table class="center">
+					<tr>
+						<th class="topic">Topic</th>
+						<th class="mean">Mean</th>
+						<th class="std">STD</th>
+					</tr>
+
+						{% for i in range(num)%}
+
+					<tr>
+		    			<td>{{TOPICs[i]}}</td>
+		    			<td class="td">{{MEANs[i]}}</td>
+		    			<td class="td">{{STDs[i]}}</td>
+		    		</tr>
+
+		    			{% endfor %}
+			</table>
+
+
+
+<!--{% for i in range(num)%}
+	{{i+1}} ) Topic: {{TOPICs[i]}}, Mean: {{MEANs[i]}}, STD: {{STDs[i]}} <br>
+{% endfor %}-->
+
+
+<body>
+</html>

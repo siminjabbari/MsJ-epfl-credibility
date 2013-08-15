@@ -1,0 +1,53 @@
+body {
+
+  font-family: Georgia, "Times New Roman",Times, serif;
+  color: #00008B;
+  background-color: #FFE4E1; 
+}
+
+h3 {
+  font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  margin: 50px;
+  text-align:center;
+}
+  
+.Submit{
+
+  border-top: 1px solid #96d1f8;
+   background: #c94147;
+   padding: 5px 10px;
+   -webkit-border-radius: 19px;
+   -moz-border-radius: 19px;
+   border-radius: 19px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+
+/*  -webkit-border-radius: 4px;
+border-radius: 4px;
+background: #ddd url(../img/buttons/bg-btn.gif) repeat-x 0 0;
+border-color: #39d;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+display: inline-block;
+vertical-align: top;
+font: bold 12px/15px Helvetica Neue,Arial,"Lucida Grande",Sans-serif;
+margin: 0;
+overflow: visible;
+padding: 5px 9px 5px 9px;
+text-shadow: 0 1px #f0f0f0;
+color: #333;
+-moz-box-shadow: 0 1px 0 #f8f8f8;
+-wekbit-box-shadow: 0 1px 0 #f8f8f8;
+box-shadow: 0 1px 0 #f8f8f8;*/
+
+}
+
+

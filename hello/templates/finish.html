@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Thank you for visiting</title>
+  <link rel="stylesheet" href="/css/finish.css">
+</head>
+
+<body>
+{% if grade %}
+	<h1> Thank you for using our application</h1>
+	<h2>The rate you gave to the URL was <span> {{grade}} </span>. We updated our database according to this rate.</h2>
+<hr>
+{% if url_new and topic_new %}
+	<h2> Here is the new info added to our database thanks to your rating</h2>
+
+	<h3>URL : {{ url_new }}</h3>
+	<h3>Topic: {{topic_new}}</h3>
+	<h3>Grade: {{grade}}</h3>
+<hr>
+{% endif %}
+
+	<h2>Click <a href="/">here</a> if you want to go to the main page of the application. </h2>
+{% else %}
+	<h2>Unfortunately you entered no rate for the URL. By the way, thank you for using our application.</h2>
+	<h2>Click <a href="/">here</a> if you want to go to the main page of the application. </h2>
+
+{% endif %}
+</body>
+</html>

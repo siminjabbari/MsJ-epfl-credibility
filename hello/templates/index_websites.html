@@ -1,0 +1,47 @@
+
+<html>
+
+<head>
+  <title>URLs corresponding to the selected topic</title>
+  <link rel="stylesheet" href="/css/index-websites.css">
+</head>
+
+<body>
+
+{% if topic and number %}
+	<h2>The topic you entered is about:<br>
+		<p>{{topic}}</p>
+		Here are the websites with high credibilities:
+	</h2>
+	 	<table class="center">
+				<tr>
+					<th class="website">Website</th>
+					<th class="credibility">Credibility</th>
+				</tr>
+
+					{% for web in webs %}
+
+				<tr>
+	    			<td>{{ web[0] }}</td>
+	    			<td class="td">{{web[1]}}</td>
+	    		</tr>
+
+	    			{% endfor %}
+		</table>
+		
+    {% elif topic %}
+    	<h1> You have chosen no number</h1>
+		<a href="/Topic"> <h2> Go back </h2> </a>
+	{% elif number %}
+		<h1> You have chosen no topic</h1>
+		<a href="/Topic"> <h2> Go back </h2> </a>
+{% else %}
+
+	<h1> You have chosen neither topic nor number</h1>
+	<a href="/Topic"> <h2> Go back </h2> </a>
+
+{% endif %}
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Choose Topic</title>
+  <link rel="stylesheet" href="/css/main-topic.css">
+</head>
+
+<body>
+
+  <h3> Please choose your favorite topic from the list below: </h3>
+
+  <form action="/websites">
+    <center>
+      <select name="topic">
+        <option selected="selected" value=""> Choose Topic </option>
+        {% for topic in list_of_topics %}
+        	<option value="{{topic}}">{{topic}}</option>
+    	  {% endfor %}
+      </select>
+    </center>
+<br>
+    <h3>How many websites do you need? (Max 20):</h3>
+
+    <center>
+      
+      <select name="number">
+        <option selected="selected" value=""> Choose Number </option>
+        {% for i in range(20) %}
+          <option value="{{i+1}}">{{i+1}}</option>
+        {% endfor %}
+      </select>
+
+      <!--input class="integer" type="integer" name="number" value="" min="1" max="20"-->
+<br>
+<br>
+      <input class="submit" type="submit" value="Submit"/>
+
+    </center>
+  </form>
+
+<h3> If you want to see the ranked list of topics simply click the following button.</h3>
+<form action = "/topic_list">
+  <center><input class="submit" type = "submit" value = "Click Here"/></center>
+</center>
+</form>
+
+</body>
+</html>

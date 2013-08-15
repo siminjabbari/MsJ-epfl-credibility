@@ -1,0 +1,38 @@
+body {
+
+  font-family: Georgia, "Times New Roman",Times, serif;
+  color: #00008B;
+  background-color: #FFE4E1; 
+}
+
+h2 {
+  font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  margin: 50px;
+  text-align:center;
+}
+
+ table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse:collapse;
+    border:1px;
+  }
+
+  th{
+  	background-color:#DC143C;
+	 color:white;
+  }
+
+  td,th{
+  	border:1px solid black;
+    color:#DC143C;
+
+  }
+
+  td.td{
+  	text-align: center;
+  }
+  th.topic,th.mean,th.std{
+    color:white
+
+  }

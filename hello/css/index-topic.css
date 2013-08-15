@@ -1,0 +1,99 @@
+body {
+  /*padding-left: 25em;*/
+    font-family: Georgia, "Times New Roman",
+    Times, serif;
+    color: #00008B;
+  background-color: #FFE4E1; 
+     }
+
+h1,h2 {
+  font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  margin: 50px;
+  text-align:center;
+      }
+
+h3{
+	font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  margin: 50px;
+  text-align:center;
+  color: #DC143C;
+}
+span{
+  color: #DC143C;
+  font-weight:italic;
+}
+
+.submit {
+
+  -webkit-border-radius: 4px;
+border-radius: 4px;
+background: #ddd url(../img/buttons/bg-btn.gif) repeat-x 0 0;
+border-color: #39d;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+display: inline-block;
+vertical-align: top;
+font: bold 12px/15px Helvetica Neue,Arial,"Lucida Grande",Sans-serif;
+margin: 0;
+overflow: visible;
+padding: 5px 9px 5px 9px;
+text-shadow: 0 1px #f0f0f0;
+color: #333;
+-moz-box-shadow: 0 1px 0 #f8f8f8;
+-wekbit-box-shadow: 0 1px 0 #f8f8f8;
+box-shadow: 0 1px 0 #f8f8f8;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    border-collapse:collapse;
+    border:1px;
+  }
+
+th{
+    background-color:#DC143C;
+   color:white;
+  }
+
+td,th{
+    border:1px solid black;
+    color:#DC143C;
+
+  }
+
+  td.td{
+    text-align: center;
+  }
+  th.topic,th.subject,th.credibility{
+    color:white
+
+  }
+
+  .submit{
+    border-top: 1px solid #96d1f8;
+   background: #c94147;
+   /*background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#c94147));
+   background: -webkit-linear-gradient(top, #c94147);
+   background: -moz-linear-gradient(top, #c94147);
+   background: -ms-linear-gradient(top,#c94147);
+   background: -o-linear-gradient(top,#c94147);*/
+   padding: 10px 20px;
+   -webkit-border-radius: 19px;
+   -moz-border-radius: 19px;
+   border-radius: 19px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+  }
+
+  .error{
+    color: #DC143C;
+  }

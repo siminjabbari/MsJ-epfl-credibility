@@ -1,0 +1,15 @@
+body {
+  font-family: Georgia, "Times New Roman",Times, serif;
+  color: #00008B;
+  background-color: #FFE4E1; 
+}
+
+h1,h2,h3 {
+  font-family: Helvetica, Geneva, Arial,SunSans-Regular, sans-serif;
+  margin: 50px;
+  text-align:center;
+  }
+
+ span,a{
+  color: #DC143C;
+}
